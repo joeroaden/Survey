@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Calculator</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class = "container">
+    <h1>Survey</h1>
+    <p>Thank you for taking this brief survey! Please answer the questions below:</p>
+
+      <h3>What is your name?</h3>
+      <form id="userInfo">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+
+        <h3>What is your favorite color?</h3>
+        <div class="form-group">
+          <label for="favColor">Favorite Color:</label>
+          <input id="favColor" class="form-control" type="color">
+        </div>
+
+        <h3>Please choose your time zone</h3>
+          <select class="form-control" id="timeZone">
+            <option>Pacific</option>
+            <option>Mountain</option>
+            <option>Central</option>
+            <option>Eastern</option>
+            <option>Alaska</option>
+            <option>Hawaii</option>
+          </select>
+
+        <h3>What is your age group?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="0-10" checked>
+              0-10
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="11-20">
+              11-20
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="21-35">
+              21-35
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="36-50">
+              36-50
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="50+">
+              50+
+            </label>
+          </div>
+        
+          <h3>What is today's date?</h3>
+            <div class="form-group">
+              <label for="date">Today's Date:</label>
+              <input id="date" class="form-control" type="date">
+            </div>
+        <button type="submit" class="btn">Submit!</button>
+      </form>
+      <div id="output"></div>
+  </div>
+</body>
+</html>
